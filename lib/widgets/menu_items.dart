@@ -10,22 +10,34 @@ class MenuItems extends StatelessWidget {
         Card(
           elevation: 10.0,
           child: ListTile(
-            title: Text('home screen',),
-            onTap: () {},
+            title: const Text(
+              'home screen',
+            ),
+            onTap: () {
+              Navigator.of(context).pushNamed('/home');
+            },
           ),
         ),
         Card(
           elevation: 10.0,
           child: ListTile(
-            title: Text('second screen',),
-            onTap: () {},
+            title: const Text(
+              'second screen',
+            ),
+            onTap: () {
+              Navigator.of(context).pushNamed('/second');
+            },
           ),
         ),
         Card(
           elevation: 10.0,
           child: ListTile(
-            title: Text('third screen',),
-            onTap: () {},
+            title: const Text(
+              'third screen',
+            ),
+            onTap: () {
+              Navigator.of(context).pushNamed('/third');
+            },
           ),
         ),
       ],

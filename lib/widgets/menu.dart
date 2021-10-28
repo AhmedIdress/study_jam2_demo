@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:study_jam2/widgets/menu_items.dart';
 
@@ -12,19 +10,19 @@ class MyDrawer extends StatelessWidget {
       child: Container(
         color: Theme.of(context).primaryColor,
         child: ListView(
-          children: [
+          children: const [
             UserAccountsDrawerHeader(
-              currentAccountPicture: CircleAvatar(
+              currentAccountPicture:CircleAvatar(
                 radius: 15.0,
-                child: Text(
+                child:Text(
                   'A',
                   style: TextStyle(
                     fontSize: 30.0,
                   ),
                 ),
               ),
-              accountName: Text('Ahmed Idress'),
-              accountEmail: Text('ahmedidress20@gmail.com'),
+              accountName:Text('Ahmed Idress'),
+              accountEmail:Text('ahmedidress20@gmail.com'),
             ),
             MenuItems(),
           ],

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:study_jam2/screens/home_screen.dart';
+import 'package:study_jam2/screens/second_screen.dart';
+import 'package:study_jam2/screens/third_screen.dart';
 import 'package:study_jam2/utils/theme.dart';
 
 void main() {
@@ -14,7 +16,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: myTheme,
-      home: const HomeScreen(),
+      routes: {
+        '/home':(context)=> const HomeScreen(),
+        '/second':(context)=> const SecondScreen(),
+        '/third':(context)=> const ThirdScreen(),
+      },
+      initialRoute: '/home',
     );
   }
 }
